@@ -1,0 +1,29 @@
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+#classe li {
+    width: 200px;
+    height: 200px;
+    margin-top: 3rem;
+}
+
+#classe li img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    gap: 2rem;
+    transition: 0.3s;
+}
+
+li img:hover {
+    transform: scale(1.08);
+} 
+

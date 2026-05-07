@@ -1,0 +1,351 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site WoW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/dark-mod.css">
+  <link rel="stylesheet" href="../css/donjons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="light">
+<!-- Header navbar -->
+<header class="header">
+  <div class="logo"></div>
+  <button data-theme-toggler class="theme-btn">
+  🌙
+</button>
+
+  <!-- MENU DESKTOP -->
+  <nav class="nav-desktop">
+    <a href="../index.html">Accueil</a>
+    <a href="classes.html">Classes</a>
+    <a href="donjons.html">Donjons</a>
+    <a href="tiers-list.html">Tiers list</a>
+    <a href="#">Recherche</a>
+    <a href="#">Inscription</a>
+  </nav>
+
+  <!-- BURGER MOBILE -->
+  <div class="burger" id="burger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<nav class="menu-mobile" id="menu">
+  <a href="#">Classes</a>
+  <a href="#">Donjons</a>
+  <a href="#">Tiers list</a>
+  <a href="#">Recherche</a>
+  <a href="#">Contact</a>
+</nav>
+<!-- Header navbar Fin -->
+
+<!-- //! Liste des donjons !// -->
+<main>
+ <ul id="classe">
+  <li><img src="../image/donjons/Academie d'Alghethar.png"  
+    alt="Académie d'Alghethar"
+    data-bs-toggle="modal"
+    data-bs-target="#modalAcademie">
+  </li>
+  <li><img src="../image/donjons/Cavernes de Maisara.png"     
+    alt="Cavernes Maisara"
+    data-bs-toggle="modal"
+    data-bs-target="#modalMaisara">
+ </li>
+  <li><img src="../image/donjons/Fleche de Coursevent.png" 
+    alt="Flèche Coursevent"
+    data-bs-toggle="modal"
+    data-bs-target="#modalCoursevent"> 
+  </li>
+  <li><img src="../image/donjons/Fosse de Saron.png" 
+    alt="Fosse de Saron"
+    data-bs-toggle="modal"
+    data-bs-target="#modalSaron">
+  </li>
+  <li><img src="../image/donjons/Orée du Ciel.png"  
+    alt="Orée du ciel"
+    data-bs-toggle="modal"
+    data-bs-target="#modalOrée">
+  </li>
+  <li><img src="../image/donjons/Point-Nexus.png" 
+    alt="Point-Nexus"
+    data-bs-toggle="modal"
+    data-bs-target="#modalPoint">
+  </li>
+  <li><img src="../image/donjons/Siege du Triumvirat.png" 
+    alt="Siege du Triumvirat"
+    data-bs-toggle="modal"
+    data-bs-target="#modalTriumvirat">
+  </li>
+  <li><img src="../image/donjons/Terrasse des Magisteres.png" 
+    alt="Terrasse des Magistères"
+    data-bs-toggle="modal"
+    data-bs-target="#modalMagisteres">
+  </li>
+ </ul>
+</main>
+<!-- //! Liste des donjons Fin !// -->
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Azeroth Guide</p>
+    <p>Fan site non officiel - World of Warcraft</p>
+  </div>
+</footer>
+<!-- Footer Fin -->
+
+
+ <!-- //! Liste Toute les fenetres Modal !// -->
+
+<!-- algethar -->
+
+<div class="modal fade" id="modalAcademie" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Algeth'ar academy</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/Route-algethard.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- algethar Fin -->
+
+<!-- maisara -->
+<div class="modal fade" id="modalMaisara" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Cavernes de Maisara</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>Routes :</p>
+        <img src="../image/donjons/route-maisara.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- maisara Fin -->
+
+<!-- Coursevent -->
+<div class="modal fade" id="modalCoursevent" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Flèche Coursevent</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-coursevent.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Coursevent Fin -->
+
+<!-- Fosse de Saron -->
+<div class="modal fade" id="modalSaron" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Fosse de Saron</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-saron.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fosse de Saron Fin -->
+
+<!-- Orée du Ciel -->
+<div class="modal fade" id="modalOrée" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Orée du Ciel</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-orée.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Orée du Ciel Fin -->
+
+<!-- Point Nexus -->
+<div class="modal fade" id="modalPoint" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Point Nexus</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-pointNexus.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Point Nexus Fin -->
+
+<!-- Triumvirat -->
+<div class="modal fade" id="modalTriumvirat" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Siège de Triumvirat</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-triumvirat.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Triumvirat Fin -->
+
+<!-- Terrasse des Magistères -->
+<div class="modal fade" id="modalMagisteres" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
+
+      <div class="modal-header">
+        <h2>Terrasses des Magistères</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>Routes :</p>
+        <img src="../image/donjons/route-terrasseMagister.png" class="modal-img">
+
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Terrasse des Magistères Fin -->
+
+
+
+
+<!-- //! Liste Toute les fenetres Modal Fin !// -->
+
+</body>
+<script src="../javascript/dark-mode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>
+

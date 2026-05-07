@@ -1,0 +1,44 @@
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5rem;
+    padding: 0;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+#classe li {
+    width: 200px;
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#classe li img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#classe li img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px gold;
+   
+}
+
+.modal-header {
+    color: #e6c36a;
+    transition: 0.3s;
+}
+
+.modal-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

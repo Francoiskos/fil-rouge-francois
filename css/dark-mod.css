@@ -6,29 +6,41 @@
 
 body {
 	background-image: url(../image/backgroundClair.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body[data-theme="dark"] {
   background-image: url(../image/backgroundSombre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body[data-theme="dark"] .logo {
+  background-image: url("../image/logo-header-clair.png");
 }
 
 body[data-theme="light"] header {
-  background: linear-gradient(180deg, #ffffff, #e8e8e862);
+  background: linear-gradient(180deg, #ffffff, rgba(75, 74, 74, 0.562));
   border-bottom: 2px solid black;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
-
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
 }
 
 body[data-theme="light"] footer {
-  background: linear-gradient(180deg, #ffffff, #e8e8e885);
+  background: linear-gradient(180deg, #ffffff, rgba(75, 74, 74, 0.562));
   border-top: 2px solid black;
   box-shadow: 0 0 60px rgba(0,0,0,0.15);
  
 }
 
-header [data-theme="light"] .nav-desktop {
+body[data-theme="light"] .nav-desktop a{
   color: black;
 }
 
+body[data-theme="light"] .footer-content p {
+  color: black;
+}
 
-
+body[data-theme="light"] .logo {
+  background-image: url("../image/logo-header.png");
+}

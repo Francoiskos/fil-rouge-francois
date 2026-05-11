@@ -48,11 +48,12 @@
 
 <!-- Liste des classes -->
 <main>
- <ul id="classe">
-  <li><img src="../image/LogoClasses/icone-DH.png" alt="">
+  <ul id="classe">
+  <li><img src="../image/LogoClasses/icone-DH.png" alt="" data-bs-toggle="modal" 
+  data-bs-target="#modalDH">
   </li>
-  <li><img src="../image/LogoClasses/icone-DK.png" alt="">
- </li>
+  <li><img src="../image/LogoClasses/icone-DK.png"  
+  </li>
   <li><img src="../image/LogoClasses/icone-warlock.png" alt=""> 
   </li>
   <li><img src="../image/LogoClasses/icone-druide.png" alt="">
@@ -77,20 +78,35 @@
   </li>
  </ul>
 </main>
+
+
 <!-- Liste des classes Fin -->
 
+ <!-- //! Liste Toute les fenetres Modal !// -->
 
-<!-- fenetre modal -->
+<!-- DH -->
+<div class="modal fade" id="modalDH" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border-warning">
 
-<!-- <div class="modal-body">
-  <h2 class="fs-5">Popover in a modal</h2>
-  <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
-  <hr>
-  <h2 class="fs-5">Tooltips in a modal</h2>
-  <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
-</div> -->
+      <div class="modal-header">
+        <h2>Chasseur de Démon</h2>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
 
-<!-- fenetre modal Fin -->
+      <div class="modal-body">
+        <a href="../Guide-de-classes/demonHunter.html">Dévastation</a>
+        <a href="#">Vengeance</a>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-bs-dismiss="modal">
+          Fermer
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -104,6 +120,7 @@
 </body>
 <script src="../javascript/main.js"></script>
 <script src="../javascript/dark-mode.js"></script>
+<!-- <script src="../javascript/guide-classes.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </html>

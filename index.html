@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site WoW</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Azeroth Guide</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/dark-mod.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body data-theme="light">
 
-<!-- Header navbar -->
 <header class="header">
-  <div class="logo"></div>
-  <button data-theme-toggler class="theme-btn">
-  🌙 
-</button>
+  <div class="logo">Azeroth Guide</div>
+
+  <button data-theme-toggler class="theme-btn" aria-label="Changer le thème">
+    🌙
+  </button>
 
   <!-- MENU DESKTOP -->
-  <nav id="nav1" class="nav-desktop">
-    <a href="index.html"> Accueil</a>
+  <nav class="nav-desktop">
+    <a href="index.html">Accueil</a>
     <a href="pages/classes.html">Classes</a>
     <a href="pages/donjons.html">Donjons</a>
-    <a href="pages/tiers-list.html">Tiers list</a>
-    <a href="#">Recherche</a>
-    <a href="#">Inscription</a>
+    <a href="pages/tiers-list.html">Tier List</a>
+    <a href="#"data-bs-toggle="modal" data-bs-target="#searchModal">Recherche</a>
   </nav>
 
-  <!-- BURGER MOBILE -->
+  <!-- BURGER -->
   <div class="burger" id="burger">
     <div></div>
     <div></div>
@@ -39,55 +40,88 @@
 
 <!-- MENU MOBILE -->
 <nav class="menu-mobile" id="menu">
-  <a href="../index.html"> Accueil</a>
-  <a href="pages/classes.html">Classes</a>
-  <a href="#">Donjons</a>
-  <a href="#">Tiers list</a>
-  <a href="#">Recherche</a>
-  <a href="#">Contact</a>
+   <a href="index.html">Accueil</a>
+    <a href="pages/classes.html">Classes</a>
+    <a href="pages/donjons.html">Donjons</a>
+    <a href="pages/tiers-list.html">Tier List</a>
+    <a href="#">Recherche</a>
 </nav>
-<!-- Header navbar Fin -->
- 
-<!-- Carrousel -->
 
 <main class="carrou">
-  <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="image/carrousel/classes.png" class="d-block w-100" alt="...">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="image/carrousel/classes.png" class="d-block w-100" alt="Guide des classes">
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carrousel/donjons.png" class="d-block w-100" alt="Guide des donjons">
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carrousel/tiers-list.png" class="d-block w-100" alt="Tier list">
+      </div>
+
     </div>
-    <div class="carousel-item">
-      <img src="image/carrousel/donjons.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="image/carrousel/tiers-list.png" class="d-block w-100" alt="...">
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</main>
+<!-- Modal Recherche  -->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">Recherche</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+
+      <div class="modal-body">
+        <input 
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Rechercher une classe, un donjon..."
+        >
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Fermer
+        </button>
+
+        <button type="button" class="btn btn-primary" id="searchBtn">
+          Rechercher
+        </button>
+      </div>
+
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-</main>
-<!-- Carrousel Fin -->
 
-<!-- Footer -->
+<!-- Modal Recherche Fin -->
 
-<!-- Footer Fin -->
- <footer class="footer">
+<footer class="footer">
   <div class="footer-content">
     <p>© 2026 Azeroth Guide</p>
     <p>Fan site non officiel - World of Warcraft</p>
   </div>
-  
-<script src="javascript/dark-mode.js"></script>
-<script src="javascript/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-
 </footer>
+
+<script src="javascript/main.js"></script>
+<script src="javascript/dark-mode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

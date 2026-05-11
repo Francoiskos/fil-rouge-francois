@@ -41,6 +41,6 @@ body[data-theme="light"] .footer-content p {
   color: black;
 }
 
-body[data-theme="light"] .logo {
+/* body[data-theme="light"] .logo {
   background-image: url("../image/logo-header.png");
-}
+} */

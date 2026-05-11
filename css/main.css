@@ -1,104 +1,70 @@
-/* ================= RESET ================= */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
 body {
-  min-height: 100vh;
-}
-
-/* ================= BODY ================= */
-body {
+  font-family: 'Cinzel', serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   padding-top: 90px;
-  font-family: 'Cinzel', serif;
   overflow-x: hidden;
 }
 
-/* ================= MAIN ================= */
 main {
   flex: 1;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 9999;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   width: 100%;
   min-height: 90px;
   padding: 15px 25px;
-
-  background: linear-gradient(180deg, #2a2a2a, #111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
   border-bottom: 2px solid #c9a44e;
-  box-shadow: 0 0 15px rgba(0,0,0,0.9);
+  z-index: 999;
 }
 
-/* ================= LOGO ================= */
+/* LOGO */
 .logo {
-  width: 180px;
-  height: 60px;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  color: #e6c36a;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* ================= MENU DESKTOP ================= */
+/* DESKTOP NAV */
 .nav-desktop {
   display: flex;
-  align-items: center;
+  gap: 25px;
 }
 
 .nav-desktop a {
-  margin-left: 25px;
-  text-decoration: none;
   color: #e6c36a;
-  position: relative;
-  transition: 0.3s;
-}
-
-/* Hover */
-.nav-desktop a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: gold;
-  transition: 0.3s;
+  text-decoration: none;
 }
 
 .nav-desktop a:hover {
   color: gold;
-  text-shadow: 0 0 8px gold;
 }
 
-.nav-desktop a:hover::after {
-  width: 100%;
-}
-
-/* ================= THEME BUTTON ================= */
+/* THEME BTN */
 .theme-btn {
   background: none;
   border: none;
-  color: #e6c36a;
-  font-size: 1.5rem;
+  color: gold;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
-/* ================= BURGER ================= */
+/* BURGER */
 .burger {
   display: none;
   cursor: pointer;
@@ -107,26 +73,20 @@ main {
 .burger div {
   width: 28px;
   height: 3px;
-  background: #e6c36a;
-  margin: 6px;
-  transition: 0.3s;
+  background: gold;
+  margin: 5px;
 }
 
-/* ================= MENU MOBILE ================= */
+/* MENU MOBILE */
 .menu-mobile {
   position: fixed;
-  top: 0;
+  top: 90px;
   left: -260px;
-
   width: 260px;
   height: 100%;
-
-  background: linear-gradient(180deg, #1a1a1a, #0b0c10);
-  border-right: 2px solid #c9a44e;
-
-  padding-top: 80px;
+  background: #111;
   transition: 0.4s;
-  box-shadow: 5px 0 20px rgba(0,0,0,0.9);
+  z-index: 998;
 }
 
 .menu-mobile.active {
@@ -135,32 +95,12 @@ main {
 
 .menu-mobile a {
   display: block;
-  padding: 15px 25px;
+  padding: 20px;
+  color: gold;
   text-decoration: none;
-  color: #e6c36a;
-  border-bottom: 1px solid rgba(255,215,0,0.1);
-  transition: 0.3s;
 }
 
-.menu-mobile a:hover {
-  background: rgba(255,215,0,0.08);
-  padding-left: 35px;
-  text-shadow: 0 0 6px gold;
-}
-
-/* ================= CONTENT ================= */
-.content {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.content h1 {
-  font-size: 40px;
-  color: #f5d27a;
-  text-shadow: 0 0 15px rgba(255,215,0,0.6);
-}
-
-/* ================= CARROUSEL ================= */
+/* CAROUSEL */
 .carrou {
   max-width: 1200px;
   margin: 40px auto;
@@ -172,41 +112,35 @@ main {
   object-fit: cover;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer {
-  background: linear-gradient(180deg, #111, #000);
-  border-top: 2px solid #c9a44e;
+  background: #000;
+  color: gold;
   text-align: center;
-  width: 100%;
-  padding: 20px 0;
+  padding: 20px;
 }
 
-.footer-content p {
-  margin: 5px 0;
-  color: #c9a44e;
-  font-size: 14px;
-}
-
-/* ================= TABLETTE ================= */
-@media (max-width: 992px) {
-  .logo {
-    width: 140px;
-  }
-
+/* TABLETTE */
+@media screen and (max-width: 992px) {
   .carousel-item img {
     max-height: 400px;
   }
+
+  .logo {
+    font-size: 1.2rem;
+  }
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
   body {
-    padding-top: 140px;
+    padding-top: 130px;
   }
 
   .header {
-    flex-direction: column;
-    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .nav-desktop {
@@ -222,23 +156,18 @@ main {
   }
 }
 
-/* ================= PETIT MOBILE ================= */
-@media (max-width: 480px) {
-  body {
-    padding-top: 160px;
-  }
+/* PETIT MOBILE */
+@media screen and (max-width: 480px) {
 
   .logo {
-    width: 110px;
-    height: 45px;
+    font-size: 1rem;
   }
 
   .carousel-item img {
     max-height: 200px;
   }
 
-  .footer-content p {
+  .footer {
     font-size: 12px;
   }
 }
-
